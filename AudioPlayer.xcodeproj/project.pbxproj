@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C16C4C5620931002003FF166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C16C4C5520931002003FF166 /* AppDelegate.m */; };
-		C16C4C5920931003003FF166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16C4C5820931003003FF166 /* ViewController.m */; };
 		C16C4C5B20931003003FF166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16C4C5A20931003003FF166 /* Assets.xcassets */; };
 		C16C4C5E20931003003FF166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16C4C5C20931003003FF166 /* Main.storyboard */; };
 		C16C4C6120931003003FF166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C16C4C6020931003003FF166 /* main.m */; };
+		C16C4C6B20931AA4003FF166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16C4C6920931AA4003FF166 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C16C4C5120931002003FF166 /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16C4C5420931002003FF166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C16C4C5520931002003FF166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C16C4C5720931003003FF166 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C16C4C5820931003003FF166 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C16C4C5A20931003003FF166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C16C4C5D20931003003FF166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C16C4C5F20931003003FF166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C16C4C6020931003003FF166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C16C4C6220931003003FF166 /* AudioPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioPlayer.entitlements; sourceTree = "<group>"; };
+		C16C4C6920931AA4003FF166 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C16C4C6A20931AA4003FF166 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,11 @@
 		C16C4C5320931002003FF166 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C16C4C6E20931AF3003FF166 /* Control */,
+				C16C4C6D20931AEE003FF166 /* Model */,
+				C16C4C6820931AA4003FF166 /* View */,
 				C16C4C5420931002003FF166 /* AppDelegate.h */,
 				C16C4C5520931002003FF166 /* AppDelegate.m */,
-				C16C4C5720931003003FF166 /* ViewController.h */,
-				C16C4C5820931003003FF166 /* ViewController.m */,
 				C16C4C5A20931003003FF166 /* Assets.xcassets */,
 				C16C4C5C20931003003FF166 /* Main.storyboard */,
 				C16C4C5F20931003003FF166 /* Info.plist */,
@@ -68,6 +69,29 @@
 				C16C4C6220931003003FF166 /* AudioPlayer.entitlements */,
 			);
 			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		C16C4C6820931AA4003FF166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16C4C6920931AA4003FF166 /* ViewController.m */,
+				C16C4C6A20931AA4003FF166 /* ViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C16C4C6D20931AEE003FF166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C16C4C6E20931AF3003FF166 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16C4C5920931003003FF166 /* ViewController.m in Sources */,
+				C16C4C6B20931AA4003FF166 /* ViewController.m in Sources */,
 				C16C4C6120931003003FF166 /* main.m in Sources */,
 				C16C4C5620931002003FF166 /* AppDelegate.m in Sources */,
 			);
